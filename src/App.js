@@ -1,13 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-import Search from './Components/SearchBar/Search';
+import { RouterProvider } from "react-router-dom";
+import { router } from "./Routes/Routes";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Welcome to MoviesRealm</h1>
-      <Search />
-    </div>
+    <RouterProvider router={router}></RouterProvider>
   );
 }
 
